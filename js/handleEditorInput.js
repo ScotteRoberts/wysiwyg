@@ -4,7 +4,7 @@
  */
 export default function handleEditorInput(event) {
   const textElement = event.currentTarget.parentNode.querySelector('.text-element');
-  if (event.target.type === 'text' || event.target.tagName === 'TAGNAME') {
+  if (event.target.type === 'text' || event.target.tagName === 'TEXTAREA') {
     const text = event.target.value;
     textElement.innerText = text;
   } else {

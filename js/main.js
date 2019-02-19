@@ -1,5 +1,6 @@
 import toggleActive from './toggleActive.js';
 import handleEditorInput from './handleEditorInput.js';
+import addParagraph from './addParagraph.js';
 
 // DEV: all edit buttons
 const editButtons = document.querySelectorAll('.edit-button, .save-button');
@@ -13,3 +14,5 @@ editButtons.forEach(button => {
 document.querySelectorAll('.editor').forEach(editor => {
   editor.addEventListener('input', handleEditorInput);
 });
+
+document.getElementById('add-button').addEventListener('click', addParagraph);
