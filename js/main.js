@@ -1,14 +1,14 @@
-import toggleActive from './toggleActive.js';
 import handleEditorInput from './handleEditorInput.js';
 import addParagraph from './addParagraph.js';
 
-// DEV: all edit buttons
-const editButtons = document.querySelectorAll('.edit-button, .save-button');
+import Editor from './components/Editor.js';
+import EditableText from './components/EditableText.js';
+import EditableHeading from './components/EditableHeading.js';
+import addTitle from './addTitle.js';
 
-// DEV: adding event listeners to each edit button.
-editButtons.forEach(button => {
-  button.addEventListener('click', toggleActive);
-});
+customElements.define('wysiwyg-editor', Editor);
+customElements.define('wysiwyg-editable-text', EditableText);
+customElements.define('wysiwyg-editable-heading', EditableHeading);
 
 // DEV: listen for "input" events from editor
 document.querySelectorAll('.editor').forEach(editor => {
@@ -16,3 +16,5 @@ document.querySelectorAll('.editor').forEach(editor => {
 });
 
 document.getElementById('add-button').addEventListener('click', addParagraph);
+
+document.getElementById('add-title').addEventListener('click', addTitle);

@@ -11,81 +11,11 @@
 
   <body>
     <main>
-      <section class="editable-text">
-        <button type="button" class="edit-button">Edit</button>
-        <button type="button" class="save-button">Save</button>
-        <h1 class="text-element">Your title</h1>
+      <wysiwyg-editable-heading heading="h1"></wysiwyg-editable-heading>
 
-        <div class="editor">
-          <input type="text" value="Your title" />
+      <wysiwyg-editable-text></wysiwyg-editable-text>
 
-          <section class="styles">
-            <div class="form-group">
-              <label>
-                Font color:
-                <input type="color" name="color" />
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label>
-                Font size:
-                <input type="number" name="font-size" data-unit="px" value="32" />
-                px
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label>
-                Font family:
-                <select name="font-family">
-                  <option value="sans-serif">sans-serif</option>
-                  <option value="serif">serif</option>
-                </select>
-              </label>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section class="editable-text">
-        <button type="button" class="edit-button">Edit</button>
-        <button type="button" class="save-button">Save</button>
-        <p class="text-element">Go ahead, edit me however you want!</p>
-
-        <div class="editor">
-          <!-- prettier-ignore -->
-          <textarea cols="40" rows="5">Go ahead, edit me however you want!</textarea>
-
-          <section class="styles">
-            <div class="form-group">
-              <label>
-                Font color:
-                <input type="color" name="color" />
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label>
-                Font size:
-                <input type="number" name="font-size" data-unit="px" value="16" />
-                px
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label>
-                Font family:
-                <select name="font-family">
-                  <option value="sans-serif">sans-serif</option>
-                  <option value="serif">serif</option>
-                </select>
-              </label>
-            </div>
-          </section>
-        </div>
-      </section>
-
+      <button id="add-title" type="button">+ Add title</button>
       <button id="add-button" type="button">+ Add paragraph</button>
     </main>
   </body>

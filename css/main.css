@@ -1,8 +1,12 @@
-@import "resets.css";
-@import "typography.css";
-@import "editable-text.css";
-@import "editor.css";
-@import "add-button.css";
+@import 'resets.css';
+@import 'typography.css';
+@import 'editable-text.css';
+@import 'editor.css';
+@import 'add-button.css';
+
+@import 'components/editor.css';
+@import 'components/editable-text.css';
+@import 'components/editable-heading.css';
 
 html {
   background-color: #151019;
@@ -22,7 +26,7 @@ main {
   max-width: 1100px;
   margin: auto;
   margin-bottom: 4rem;
-  padding: 1rem 1rem;
+  padding: 0;
   background-color: #eff1f3;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
 }
