@@ -1,4 +1,4 @@
-wysiwyg-editable-text {
+wysiwyg-editable-heading {
   display: block;
   position: relative;
   padding: 15px;
@@ -8,12 +8,12 @@ wysiwyg-editable-text {
   transition: all 350ms;
 }
 
-wysiwyg-editable-text:hover {
+wysiwyg-editable-heading:hover {
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
   border-color: rgb(218, 220, 224);
 }
 
-wysiwyg-editable-text[active] {
+wysiwyg-editable-heading[active] {
   margin-bottom: 1rem;
   background-color: #f4f4f4;
   border-color: rgba(0, 0, 0, 0.5);
@@ -36,32 +36,32 @@ wysiwyg-editable-text[active] {
   transition: all 350ms;
 }
 
-wysiwyg-editable-text .delete-button {
-  right: 4em;
+wysiwyg-editable-heading .delete-button {
+  top: 2.5em;
 }
 
-wysiwyg-editable-text:hover .delete-button,
-wysiwyg-editable-text:hover .edit-button {
+wysiwyg-editable-heading:hover .delete-button,
+wysiwyg-editable-heading:hover .edit-button {
   opacity: 1;
 }
 
-wysiwyg-editable-text[active] .edit-button {
+wysiwyg-editable-heading[active] .edit-button {
   display: none;
 }
 
-wysiwyg-editable-text[active] .save-button {
+wysiwyg-editable-heading[active] .save-button {
   opacity: 0;
 }
 
-wysiwyg-editable-text[active]:hover .save-button {
+wysiwyg-editable-heading[active]:hover .save-button {
   opacity: 1;
 }
 
 .save-button {
   display: none;
+  opacity: 1;
 }
 
-wysiwyg-editable-text[active] .delete-button,
-wysiwyg-editable-text[active] .save-button {
+wysiwyg-editable-heading[active] .save-button {
   display: inline-block;
 }
