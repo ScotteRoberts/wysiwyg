@@ -7,5 +7,10 @@ export default function addTitle(event) {
   const newEditableHeading = document.createElement('wysiwyg-editable-heading');
   const main = document.querySelector('main');
 
-  main.prepend(newEditableHeading);
+  const headerDoesExist = document.querySelector('wysiwyg-editable-heading');
+  if (!headerDoesExist) {
+    main.prepend(newEditableHeading);
+  } else {
+    console.log('Heading already exists.');
+  }
 }
